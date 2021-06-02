@@ -10,6 +10,15 @@ router.get('/hello', function(req, res, next) {
 
 function login(username, password)
 {
+    var query = "SELECT * FROM users WHERE username=" + username + " AND password=" +password;
+
+    // perform sql command
+
+    // if we found a row
+        // return true
+    // return false
+
+
     return true;
 }
 
