@@ -39,4 +39,9 @@ router.post('/login', function(req, res, next) {
     res.send(username);
 });
 
+// updates username
+router.put('/user/name', function(req, res, next) {
+    res.json({"status": "error"});
+}
+
 module.exports = router;
