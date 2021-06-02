@@ -10,6 +10,8 @@ router.get('/hello', function(req, res, next) {
 
 router.post('/login', function(req, res, next) {
     var username = req.body.username;
+    var password = req.body.password;
+
     console.log(username);
     console.log(req.body);
     // res.json({"response": "success"});
@@ -17,6 +19,7 @@ router.post('/login', function(req, res, next) {
     // res.json(username);
     // res.send(username);
     res.send(username);
+
 
 });
 
