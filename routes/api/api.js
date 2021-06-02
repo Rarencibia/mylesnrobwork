@@ -8,19 +8,26 @@ router.get('/hello', function(req, res, next) {
 });
 
 
+function login(username, password)
+{
+    return true;
+}
+
 router.post('/login', function(req, res, next) {
     var username = req.body.username;
     var password = req.body.password;
 
-    console.log(username);
-    console.log(req.body);
+    var status = login(username, password);
+
+    // console.log(username);
+    // console.log(req.body);
     // res.json({"response": "success"});
     // res.send(req.body);
     // res.json(username);
     // res.send(username);
+
+
     res.send(username);
-
-
 });
 
 module.exports = router;
