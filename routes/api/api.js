@@ -22,6 +22,11 @@ function login(username, password)
     return true;
 }
 
+// create account
+router.post('/user', function(req, res, next) {
+    res.json({"status": "success"});
+}
+
 router.post('/login', function(req, res, next) {
     var username = req.body.username;
     var password = req.body.password;
